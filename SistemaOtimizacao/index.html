@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Início</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="top">
+                <div class="icon">
+                    <img src="icon-pg.png" alt="">
+                </div>
+                <h2>Bem vindo!</h2>
+            </div>
+            <div class="btn-content">
+                <button id="btnNovoPedido">
+                    Novo pedido
+                </button>
+                <button id="btnGerarProducao">
+                    Gerar produção
+                </button>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="right-content">
+                <div class="container-novo-pedido active">
+                    <div class="top-cnp">
+                        <h4>Registrar novo pedido</h4>
+                        <span class="numero-pedido">Numero do pedido</span>
+                    </div>
+                    <form id="formPedido">
+                        <label for="campoTamanho" class="lb-campo">Tamanho:</label><br>
+                        <input type="number" name="campoTamanho" id="campoTamanho" min="0" step="0.01">
+                        <br>
+                        <label for="campoQuantidade" class="lb-campo">Quantidade:</label><br>
+                        <input type="number" name="campoQuantidade" id="campoQuantidade" min="0" step="1">
+
+                        <button type="button" id="btnAdicionarItem">Adicionar item</button>
+                        <button type="submit" id="btnSalvarPedido">Salvar pedido</button>
+                    </form>
+                    <div class="container-tabela-pedido">
+                        <table class="tabela-itens-pedido">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tamanho</th>
+                                    <th scope="col">Quantidade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               <tr>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="container-gerar-producao">
+                    <div class="top-cgp">
+                        <h4>Gerar produção</h4>
+                    </div>
+                    <div class="container-tabela-cgp">
+                        <table class="tabela-gerar-producao">
+                            <thead>
+                                <tr>
+                                    <th>Barras</th>
+                                    <th>Pedido 1</th>
+                                    <th>Pedido 2</th>
+                                    <th>Pedido 3</th>
+                                    <th>Pedido 4</th>
+                                    <th>Pedido 5</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-salvar-container">
+        <div class="overlay"></div>
+        <div class="panel-popup-salvar">
+            <h5>Pedido salvo com sucesso!</h5>
+            <button id="btnFecharPopupSalvar">Ok!</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
