@@ -15,7 +15,7 @@ body {
     width: 100%;
     height: 100vh;
     overflow-y: auto;
-    background: linear-gradient(343deg, rgba(255,231,198,1) 0%, rgba(255,172,56,1) 100%);
+    background: linear-gradient(180deg, rgba(170,230,249,1) 0%, rgba(6,149,195,1) 100%);
 }
 
 .container {
@@ -48,7 +48,8 @@ body {
 
 .top {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
     margin-bottom: 10%;
@@ -58,11 +59,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255,172,56,1);
-    width: 45px;
-    height: 45px;
+    background-color: #00b4ee;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
     border-radius: 5px;
-    margin-right: 1%;
+    margin-bottom: 1%;
 }
 
 .icon img {
@@ -70,19 +75,20 @@ body {
 }
 
 .top h2 {
-    font-size: 32px;
-    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 26px;
 }
 
 @media screen and (max-width: 1499px) {
     .top h2 {
-        font-size: 24px;
-        margin-left: 3%;
+        margin-top: 2%;
+        font-size: 22px;
     }
 
     .icon {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 4%;
     }
 }
 
@@ -97,7 +103,7 @@ body {
     height: 40px;
     font-size: 18px;
     margin-bottom: 6%;
-    background: rgba(255,172,56,1);
+    background: #00b4ee;
     border-radius: 5px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border: none;
@@ -107,11 +113,11 @@ body {
 }
 
 #btnNovoPedido:hover, #btnGerarProducao:hover {
-    background: rgb(238, 159, 49);
+    background: #0695c3;
 }
 
 #btnNovoPedido:active, #btnGerarProducao:active {
-    background: rgb(221, 148, 45);
+    background: #09789c;
 }
 
 .right-container {
@@ -119,7 +125,7 @@ body {
     flex-direction: column;
     width: 70%;
     padding: 2%;
-    overflow-y: auto; /* Adicionando rolagem interna */
+    overflow-y: auto; 
 }
 
 .right-content {
@@ -144,7 +150,7 @@ body {
 
 .top-cnp h4 {
     font-size: 24px;
-    color: rgba(255,172,56,1);
+    color: #00b4ee;
 }
 
 .numero-pedido {
@@ -174,7 +180,7 @@ form input[type="number"]{
     padding-right: 1%;
     border-radius: 5px;
     outline: none;
-    border: 1px solid rgba(255,172,56,1);
+    border: 1px solid #00b4ee;
 }
 
 #btnAdicionarItem, #btnSalvarPedido {
@@ -183,7 +189,7 @@ form input[type="number"]{
     justify-content: center;
     width: 50%;
     height: 30px;
-    background: rgba(255,172,56,1);
+    background: #00b4ee;
     border-radius: 5px;
     outline: none;
     border: none;
@@ -193,10 +199,10 @@ form input[type="number"]{
     margin-top: 1%;
     font-weight: 600;
     &:hover {
-        background: rgb(238, 159, 49);
+        background: #0695c3;
     }
     &:active {
-        background: rgb(221, 148, 45);
+        background: #09789c;
     }
 }
 
@@ -209,7 +215,7 @@ form input[type="number"]{
 .tabela-itens-pedido {
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid rgba(255,172,56,1);
+    border: 1px solid #00b4ee;
     border-radius: 5px;
     overflow: hidden;
     margin-top: 0;
@@ -217,7 +223,7 @@ form input[type="number"]{
 }
 
 .tabela-itens-pedido thead {
-    background-color: rgba(255,172,56,1);
+    background-color: #00b4ee;
     color: white;
     position: sticky;
     top: 0;
@@ -227,7 +233,7 @@ form input[type="number"]{
 .tabela-itens-pedido td {
     padding: 10px;
     text-align: left;
-    border: 1px solid rgba(255,172,56,1);
+    border: 1px solid #00b4ee;
 }
 
 .tabela-itens-pedido tbody tr {
@@ -236,7 +242,7 @@ form input[type="number"]{
 }
 
 .tabela-itens-pedido tbody tr:nth-child(even) {
-    background-color: rgb(247, 237, 223);
+    background-color: #d7f0f8;
 }
 
 .container-gerar-producao {
@@ -252,7 +258,7 @@ form input[type="number"]{
 
 .top-cgp h4 {
     font-size: 24px;
-    color: rgba(255,172,56,1);
+    color: #00b4ee;
 }
 
 .container-tabela-cgp {
@@ -264,7 +270,7 @@ form input[type="number"]{
 .tabela-gerar-producao {
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid rgba(255,172,56,1);
+    border: 1px solid #00b4ee;
     border-radius: 5px;
     overflow: hidden;
     margin-top: 0;
@@ -272,7 +278,7 @@ form input[type="number"]{
 }
 
 .tabela-gerar-producao thead {
-    background-color: rgba(255,172,56,1);
+    background-color: #00b4ee;
     color: white;
     position: sticky;
     top: 0;
@@ -282,7 +288,7 @@ form input[type="number"]{
 .tabela-gerar-producao td {
     padding: 10px;
     text-align: left;
-    border: 1px solid rgba(255,172,56,1);
+    border: 1px solid #00b4ee;
 }
 
 .tabela-gerar-producao tbody tr {
@@ -346,29 +352,32 @@ form input[type="number"]{
 .panel-popup-salvar h5 {
     margin-bottom: 20px;
     font-size: 18px;
-    color: rgba(255,172,56,1);
+    color: #00b4ee;
     
 }
 
 #btnFecharPopupSalvar {
     display: inline-block;
     padding: 10px 20px;
-    background: rgba(255,172,56,1);
+    background: #00b4ee;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
     &:hover {
-        background: rgb(238, 159, 49);
+        background: #0695c3;
     }
     &:active {
-        background: rgb(221, 148, 45);
+        background: #09789c;
     }
 }
 
 /* --- ÁREA DE RESPONSIVIDADE ---*/
 @media screen and (max-width: 999px) {
+    body {
+        overflow-y: auto;
+    }
     .container {
         display: flex;
         flex-direction: column;
@@ -377,6 +386,12 @@ form input[type="number"]{
         background: white;
         width: 100%;
         height: 100%;
+    }
+
+    .top h2 {
+        margin-top: 2%;
+        text-align: center;
+        font-size: 22px;
     }
 
     .left-container {
@@ -399,7 +414,7 @@ form input[type="number"]{
     .right-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items:flex-start;
         justify-content: center;
         width: 100%;
     }
@@ -444,10 +459,13 @@ form input[type="number"]{
         margin: 0;
     }
 
-    .container-novo-pedido,
-    .container-gerar-producao {
+    .container-novo-pedido {
         width: 100%;
         margin-top: 2rem; 
+    }
+
+    .container-novo-pedido {
+        width: 100%; 
     }
 
     .container-novo-pedido.active,
@@ -474,3 +492,11 @@ form input[type="number"]{
     }
 }
 
+/* borda na tabela */
+.tabela-itens-pedido::after,
+.tabela-gerar-producao::after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 0.5px solid #00b4ee;
+}
